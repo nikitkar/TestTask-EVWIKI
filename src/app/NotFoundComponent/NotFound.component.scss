@@ -1,0 +1,14 @@
+@import "../../assets/mixin.scss";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+.notFoundMain{
+    padding: 20px 0;
+    &Title{
+        @include font(var(--SizeText__MediunSubtitle), 700);
+
+        margin-bottom: 20px;
+
+        width: 100%;
+        text-align: center;
+    }
+}
