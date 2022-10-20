@@ -1,0 +1,131 @@
+@import "../../assets/mixin.scss";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+.mainSection {
+    padding: 70px 0;
+
+    &Wrapper {
+        height: 100%;
+
+        @include displayFlex(flex-start, center, column);
+        gap: 15px;
+    }
+
+    &Title {
+        @include font(
+            var(--SizeText__Title),
+            700,
+            "Roboto",
+            var(--LineHeight__Title)
+        );
+    }
+}
+
+.converter {
+    background-color: var(--Color__BGConverter);
+
+    padding: 15px 35px 20px 15px;
+
+    border-radius: 5px;
+
+    max-width: 450px;
+    width: 100%;
+
+    @include displayFlex(flex-start, center, column);
+    gap: 10px;
+
+    &List {
+        @include displayFlex(flex-start, center, column);
+        gap: 10px;
+
+        width: 100%;
+
+        padding: 0;
+    }
+
+    &Item {
+        @include displayFlex(flex-start, center, column);
+        gap: 3px;
+
+        width: 100%;
+
+        &--inputs {
+            @include displayFlex(center, space-between);
+            gap: 7px;
+
+            width: 100%;
+
+            position: relative;
+
+            &Title {
+                @include font(
+                    var(--SizeText__Link),
+                    700,
+                    "Roboto",
+                    var(--LineHeight__Link)
+                );
+                color: var(--Color__Link);
+
+                max-width: 70px;
+            }
+
+            &Input {
+                width: 100%;
+                border: 1px solid var(--Color__Border);
+
+                background-color: rgb(26, 28, 29);
+                color: var(--Color__White);
+                padding: 10px;
+
+                @include font(
+                    var(--SizeText__FormText),
+                    400,
+                    "Roboto",
+                    var(--LineHeight__FormText)
+                );
+
+                &:hover {
+                    border-color: rgb(70, 75, 78);
+                    box-shadow: rgb(64 105 125 / 50%) 0px 1px 3px inset;
+                }
+            }
+
+            &DeleteElement{
+                position: absolute;
+                top: 50%;
+                right: -21px;
+
+                transform: translateY(-50%);
+
+                width: auto;
+                height: auto;
+
+                &::before{
+                    content: "\2573";
+
+                    font-size: 10px;
+                    color: var(--Color__LightGrey);
+                }
+            }
+        }
+
+        &--title {
+            @include font(
+                var(--SizeText__DescriptionText),
+                400,
+                "Roboto",
+                var(--LineHeight__DescriptionText)
+            );
+            color: var(--Color__LightGrey);
+
+            width: 100%;
+            text-align: right;
+        }
+    }
+
+    &Select{
+        &--select{
+            @include font(var(--SizeText__MainText), 600, "Roboto", var(--LineHeight__MainText));
+        }
+    }
+}

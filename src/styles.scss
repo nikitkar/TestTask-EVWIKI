@@ -1,3 +1,33 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+    font-family: "Roboto";
+    src: url("./assets/fonts/Roboto/Roboto-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("./assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("./assets/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("./assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
 *,
 *::after,
 *::before {
@@ -333,7 +363,7 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     scroll-behavior: smooth; // плавная прокрутка
-    font: normal 400 14 / normal "Arial";
+    font: normal 400 14 / normal "Roboto";
 }
 
 body {
@@ -341,7 +371,7 @@ body {
     height: 100%;
 }
 
-.conteiner {
+.container {
     max-width: 1240px;
     width: 100%;
     margin: 0 auto;
@@ -350,6 +380,24 @@ body {
 
 :root {
     /* Text Styles */
+    --SizeText__Title: 40px;
+    --SizeText__Link: 16px;
+    --SizeText__FormText: 16px;
+    --SizeText__MainText: 14px;
+    --SizeText__DescriptionText: 12px;
 
     /* Color Styles */
+    --Color__Black: #000;
+    --Color__White: #fff;
+    --Color__Link: rgb(119, 180, 234);
+    --Color__LightGrey: #999;
+    --Color__BGConverter: rgb(12, 41, 53);
+    --Color__Border: rgb(53, 72, 85);
+
+    /*  Styles */
+    --LineHeight__Title: 33px;
+    --LineHeight__Link: 24px;
+    --LineHeight__FormText: 21px;
+    --LineHeight__MainText: 17px;
+    --LineHeight__DescriptionText: 14.4px;
 }
