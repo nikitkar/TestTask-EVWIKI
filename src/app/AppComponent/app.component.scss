@@ -9,6 +9,8 @@
 
         @include displayFlex(flex-start, center, column);
         gap: 15px;
+
+        color: var(--Color__White);
     }
 
     &Title {
@@ -18,6 +20,7 @@
             "Roboto",
             var(--LineHeight__Title)
         );
+        color: var(--Color__Black);
     }
 }
 
@@ -41,6 +44,7 @@
         width: 100%;
 
         padding: 0;
+        margin: 0;
     }
 
     &Item {
@@ -91,6 +95,8 @@
             }
 
             &DeleteElement{
+                display: none;
+
                 position: absolute;
                 top: 50%;
                 right: -21px;

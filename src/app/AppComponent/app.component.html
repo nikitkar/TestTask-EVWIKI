@@ -4,31 +4,23 @@
             <h1 class="mainSectionTitle">Конвертер валют</h1>
 
             <div class="converter">
-                <ul class="converterList">
-                    <li class="converterItem">
+                <ul class="converterList" >
+                    <li class="converterItem"  *ngFor="let getExchangeRatesItem of getExchangeRatesList; let index = index">
                         <div class="converterItem--inputs">
-                            <span class="converterItem--inputsTitle">USD</span>
+                            <span class="converterItem--inputsTitle">{{getExchangeRatesItem.exchange_rates}}</span>
                             <input
                                 class="converterItem--inputsInput"
                                 type="tel"
+                                [(ngModel)]="getExchangeRatesItem.value"
+                                (ngModelChange)="onChangeValue($event, index)"
                             />
                             <button class="converterItem--inputsDeleteElement"></button>
                         </div>
-                        <p class="converterItem--title">доллар США</p>
-                    </li>
-                    <li class="converterItem">
-                        <div class="converterItem--inputs">
-                            <span class="converterItem--inputsTitle">USD</span>
-                            <input
-                                class="converterItem--inputsInput"
-                                type="tel"
-                            />
-                        </div>
-                        <p class="converterItem--title">доллар США</p>
+                        <p class="converterItem--title">{{getExchangeRatesItem.currencyCode}}</p>
                     </li>
                 </ul>
 
-                <div class="converterSelect">
+                <div class="converterSelect" style="display: none;">
                     <div class="converterSelectWrapper">
                         <select
                             class="converterSelect--select form-select"
