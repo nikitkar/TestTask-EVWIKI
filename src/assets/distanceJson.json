@@ -1,0 +1,205 @@
+{
+    "Meters": {
+        "name": "Метры",
+        "ConvertTo": {
+            "Feet": {
+                "operator": "*",
+                "value": 3.2808
+            },
+            "Inches": {
+                "operator": "*",
+                "value": 39.37
+            },
+            "Cm": {
+                "operator": "/",
+                "value": 0.01
+            },
+            "Yards": {
+                "operator": "/",
+                "value": 1.0936
+            },
+            "Kilometers": {
+                "operator": "/",
+                "value": 1000
+            },
+            "Miles": {
+                "operator": "*",
+                "value": 0.00062137
+            }
+        }
+    },
+    "Feet": {
+        "name": "Фунты",
+        "ConvertTo": {
+            "Meters": {
+                "operator": "*",
+                "value": 3.2808
+            },
+            "Inches": {
+                "operator": "*",
+                "value": 12
+            },
+            "Cm": {
+                "operator": "/",
+                "value": 0.032808
+            },
+            "Yards": {
+                "operator": "*",
+                "value": 0.33333
+            },
+            "Kilometers": {
+                "operator": "/",
+                "value": 3280.8
+            },
+            "Miles": {
+                "operator": "*",
+                "value": 0.00018939
+            }
+        }
+    },
+    "Inches": {
+        "name": "Дюймы",
+        "ConvertTo": {
+            "Feet": {
+                "operator": "*",
+                "value": 0.083333
+            },
+            "Meters": {
+                "operator": "/",
+                "value": 39.37
+            },
+            "Cm": {
+                "operator": "/",
+                "value": 0.3937
+            },
+            "Yards": {
+                "operator": "*",
+                "value": 0.027778
+            },
+            "Kilometers": {
+                "operator": "/",
+                "value": 39370
+            },
+            "Miles": {
+                "operator": "*",
+                "value": 0.000015783
+            }
+        }
+    },
+    "Cm": {
+        "name": "Сантиметры",
+        "ConvertTo": {
+            "Feet": {
+                "operator": "*",
+                "value": 0.032808
+            },
+            "Meters": {
+                "operator": "/",
+                "value": 100
+            },
+            "Inches": {
+                "operator": "*",
+                "value": 0.3937
+            },
+            "Yards": {
+                "operator": "*",
+                "value": 0.010936
+            },
+            "Kilometers": {
+                "operator": "/",
+                "value": 100000
+            },
+            "Miles": {
+                "operator": "*",
+                "value": 0.0000062137
+            }
+        }
+    },
+    "Yards": {
+        "name": "Ярды",
+        "ConvertTo": {
+            "Feet": {
+                "operator": "*",
+                "value": 3
+            },
+            "Meters": {
+                "operator": "/",
+                "value": 1.0936
+            },
+            "Inches": {
+                "operator": "*",
+                "value": 36
+            },
+            "Cm": {
+                "operator": "/",
+                "value": 0.010936
+            },
+            "Kilometers": {
+                "operator": "/",
+                "value": 1093.6
+            },
+            "Miles": {
+                "operator": "*",
+                "value": 0.00056818
+            }
+        }
+    },
+    "Kilometers": {
+        "name": "Километры",
+        "ConvertTo": {
+            "Feet": {
+                "operator": "*",
+                "value": 3280.8
+            },
+            "Meters": {
+                "operator": "*",
+                "value": 1000
+            },
+            "Inches": {
+                "operator": "*",
+                "value": 39370
+            },
+            "Cm": {
+                "operator": "*",
+                "value": 100000
+            },
+            "Yards": {
+                "operator": "*",
+                "value": 1093.6
+            },
+            "Miles": {
+                "operator": "*",
+                "value": 0.62137
+            }
+        }
+    },
+    "Miles": {
+        "name": "Миль",
+        "ConvertTo": {
+            "Feet": {
+                "operator": "*",
+                "value": 5280
+            },
+            "Meters": {
+                "operator": "/",
+                "value": 0.00062137
+            },
+            "Inches": {
+                "operator": "*",
+                "value": 63360
+            },
+            "Cm": {
+                "operator": "/",
+                "value": 0.0000062137
+            },
+            "Yards": {
+                "operator": "*",
+                "value": 1760
+            },
+            "Kilometers": {
+                "operator": "/",
+                "value": 0.62137
+            }
+        }
+    }
+}
