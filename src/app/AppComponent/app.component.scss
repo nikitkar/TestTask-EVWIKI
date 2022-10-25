@@ -21,7 +21,7 @@
                 "Roboto",
                 var(--LineHeight__Title)
             );
-            color: var(--Color__Black);
+            color: var(--Color__White);
         }
     }
 
@@ -48,6 +48,13 @@
     @include displayFlex(flex-start, center, column);
     gap: 10px;
 
+    &InputValue{
+        margin-bottom: 30px;
+
+        @include displayFlex(flex-start, center, column);
+        gap: 15px;
+    }
+
     &Distance {
         background-color: var(--Color__BGConverter);
 
@@ -55,7 +62,7 @@
 
         border-radius: 5px;
 
-        max-width: 450px;
+        max-width: 490px;
         width: 100%;
 
         @include displayFlex(flex-start, center, column);

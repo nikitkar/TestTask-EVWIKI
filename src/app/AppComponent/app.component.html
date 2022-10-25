@@ -1,11 +1,24 @@
 <section class="mainSection">
     <div class="container">
         <div class="mainSectionWrapper">
-            <h1 class="mainSectionTitle">Конвертер валют</h1>
 
             <div class="mainConverterWrapper">
                 <div class="converter">
+                    <h2 class="mainSectionTitle">Конвертер валют</h2>
+
                     <ul class="converterList">
+                        <div class="converterInputValue">
+                            <p class="converterInputValue--title">Выберите валюту для конвертации (по умолчанию стоит {{nameExchangeRates}})</p>
+                            <select class="converterInputValue--select form-select" [(ngModel)]="selectCurrencyCode" (change)="onChangeSelect($event)">
+                                <option *ngFor="let code of CurrencyCods" [value]="code[0]">
+                                    <strong>{{code[0]}}</strong>
+                                    <span> {{code[1]}}</span>
+                                </option>
+                            </select>
+
+                            <input class="converterItem--inputsInput" type="tel" [(ngModel)]="valueCurrencyCode" (ngModelChange)=" onChangeExchangeRatesValue($event)">
+                        </div>
+
                         <li
                             class="converterItem"
                             *ngFor="
@@ -21,12 +34,6 @@
                                     class="converterItem--inputsInput"
                                     type="tel"
                                     [(ngModel)]="getExchangeRatesItem.value"
-                                    (ngModelChange)="
-                                        onChangeExchangeRatesValue(
-                                            $event,
-                                            index
-                                        )
-                                    "
                                 />
                                 <button
                                     class="converterItem--inputsDeleteElement"
@@ -64,6 +71,8 @@
                 </div>
 
                 <div class="converterDistance">
+                    <h2 class="mainSectionTitle">Конвертер расстояния</h2>
+
                     <ul class="converterDistanceList">
                         <li
                             class="converterDistanceItem"
